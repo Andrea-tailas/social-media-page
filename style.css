@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 1rem 4rem;
+  background-color: #fff;
+  /* background-color: rgb(27, 26, 26);
+  color:#fff; */
+}
+.dark-modes {
+  background-color: black;
+  color: #fff;
+}
+.dark-modes .cards,
+.dark-modes .block1,
+.dark-modes .block2,
+.dark-modes .block3,
+.dark-modes .block4 {
+  background-color: hsl(210, 74%, 18%);
+  color: #fff;
+}
+.dark-modes .cards:hover,
+.dark-modes .block1:hover,
+.dark-modes .block2:hover,
+.dark-modes .block3:hover,
+.dark-modes .block4:hover{
+  background-color: hsl(210, 71%, 30%);
+}
+.light-modes {
+  background-color: #fff;
+  color: black;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#social {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10rem;
+}
+#section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+#section2 {
+  display: flex;
+  flex-direction: column;
+}
+#up,
+#down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+#up {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.overview,
+.overview-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.overview {
+  margin-top: 1rem;
+}
+.block1,
+.block2,
+.block3,
+.block4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+  width: 200px;
+
+  padding: 0.5rem 0.5rem;
+  justify-content: space-between;
+  color: rgb(51, 45, 45);
+  background: rgb(215, 207, 207);
+}
+.block1,
+.block2 {
+  border-top: 3px solid blue;
+}
+.block4 {
+  border-top: 3px solid orangered;
+}
+.block3 {
+  border-top: 3px solid purple;
+}
+#twprofile,
+#ytprofile,
+#igprofile,
+#fbprofile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+#twprofile p,
+#ytprofile p,
+#igprofile p,
+#fbprofile p {
+  margin-left: 10px;
+}
+.cards {
+  padding: 0 1rem;
+  width: 200px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  color: rgb(51, 45, 45);
+  background: rgb(215, 207, 207);
+}
+#fbfollowers,
+#twfollowers,
+#igfollowers,
+#ytfollowers {
+  font-weight: 900;
+  color: #fff;
+  font-size: 3rem;
+}
+#ytnew-follows,
+#ignew-follows,
+#twnew-follows,
+#fbnew-follows {
+  color: rgb(32, 180, 32);
+  font-weight: 900;
+}
+#fbviews,
+#fblikes,
+#iglikes,
+#igviews,
+#twretweets,
+#twlikes,
+#ytlikes,
+#ytviews {
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.block1:hover,
+.block2:hover,
+.block3:hover,
+.block4:hover {
+  cursor: pointer;
+  background-color: hsl(223, 16%, 83%);
+}
+.cards:hover {
+  cursor: pointer;
+  background-color: hsl(223, 16%, 83%);
+}
+#ytviewscounter,
+#ytlikescounter,
+#twlikescounter,
+#twretweetscounter,
+#igviewscounter,
+#iglikescounter,
+#fblikescounter,
+#fbviewscounter {
+  font-size: 12px;
+}
+
+.dark-mode {
+  display: flex;
+  flex-direction: row;
+}
+#dark {
+  margin-right: 0.6rem;
+  margin-top: 0.5rem;
+}
+button {
+  height: 40%;
+  border: 0;
+  border-radius: 7px;
+  outline: 0;
+  background-color: rgb(57, 147, 177);
+  padding: 2px;
+}
+button:hover {
+  background-color: gray;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.light {
+  background-color: #fff;
+  color: black;
+}
+.one span {
+  color: rgb(23, 204, 23);
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 1rem 1rem;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
+    font-size: 15px;
+  }
+  .overview,
+  .overview-sub {
+    display: flex;
+    flex-direction: column;
+  }
+  #section1,
+  #section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #title {
+    display: flex;
+    flex-direction: column;
+  }
+  #head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .cards {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .dark-mode {
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  #fbviews,
+  #fblikes,
+  #iglikes,
+  #igviews,
+  #twretweets,
+  #twlikes,
+  #ytlikes,
+  #ytviews {
+    font-weight: 900;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  #fbfollowers,
+  #twfollowers,
+  #igfollowers,
+  #ytfollowers {
+    font-weight: 900;
+    color: #fff;
+    font-size: 2rem;
+  }
+}

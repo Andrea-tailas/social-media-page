@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="title">
+      <div id="head">
+        <span id="social">Social Media Dashboard</span>
+        <span id="total">Total Followers:<span id="counter">23,004</span> </span>
+      </div>
+      <div class="dark-mode">
+        <p id="dark">Dark Mode</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round" onclick="btn()"></span>
+        </label>
+      </div>
+    </div>
+    <section id="section1">
+      <div class="block1">
+        <div id="fbprofile">
+          <img src="./images/icon-facebook.svg">
+          <p>@nathanf</p>
+        </div>
+        <p id="fbfollowers">4444</p>
+        <p>FOLLOWERS</p>
+        <div id="fbnew-followers">
+          <img src="./images/icon-up.svg" alt="">
+          <span id="fbnew-follows"><span id="fbfollows">12</span> Today</span>
+        </div>
+      </div>
+      <div class="block2">
+        <div id="twprofile">
+          <img src="./images/icon-twitter.svg">
+          <p>@nathanf</p>
+        </div>
+        <p id="twfollowers">1048</p>
+        <p>FOLLOWERS</p>
+        <div id="twnew-followers">
+          <img src="./images/icon-up.svg" alt="">
+          <span id="twnew-follows"><span id="twfollows">99</span> Today</span>
+        </div>
+      </div>
+      <div class="block3">
+        <div id="igprofile">
+          <img src="./images/icon-instagram.svg">
+          <p>@nathanf</p>
+        </div>
+        <p id="igfollowers">111k</p>
+        <p>FOLLOWERS</p>
+        <div id="ignew-followers">
+          <img src="./images/icon-up.svg" alt="">
+          <span id="ignew-follows"><span id="igfollows">1099</span> Today</span>
+        </div>
+      </div>
+      <div class="block4">
+        <div id="ytprofile">
+          <img src="./images/icon-youtube.svg" alt="">
+          <p>@nathanf</p>
+        </div>
+        <p id="ytfollowers">82399</p>
+        <p>SUBSCRIBERS</p>
+        <div id="ytnew-followers">
+          <img src="./images/icon-up.svg" alt="">
+          <span id="ytnew-follows"><span id="ytfollows">144</span> Today</span>
+        </div>
+      </div>
+    </section>
+    <section id="section2">
+      <h2>Overview - Today</h2>
+      <div class="overview">
+        <div class="cards">
+          <div id="up">
+            <p>Page Views</p>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="fbviews">870</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="fbnew-views"><span id="fb-views">303</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div id="up">
+            <p>Likes</p>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="fblikes">5444</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="fbnew-likes"><span id="fb-likes">303</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div id="up">
+            <p>Likes</p>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="iglikes">546002</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="ignew-likes"><span id="ig-likes">2257</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div id="up">
+            <p>Profile Views</p>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="igviews">509k</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="ignew-views"><span id="ig-views">303</span>%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-sub">
+        <div class="cards">
+          <div id="up">
+            <p>Retweets</p>
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="twretweets">117</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="twnew-tweets"><span id="tw-tweets">303</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div id="up">
+            <p>Likes</p>
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="twlikes">507</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="twnew-likes"><span id="tw-likes">533</span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div id="up">
+            <p>Likes</p>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="ytlikes">1007</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="ytnew-likes"><span id="yt-likes">19</span>%</span>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="cards">
+          <div id="up">
+            <p>Total Views</p>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div id="down">
+            <p id="ytviews">1407</p>
+            <div class="one">
+              <img src="./images/icon-up.svg" alt="">
+              <span id="ytnew-views"><span id="yt-views">33</span>%</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
